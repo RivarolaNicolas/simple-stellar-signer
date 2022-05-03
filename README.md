@@ -2,9 +2,9 @@
 
 ## Usage
 
-Simple Signer is a simple tool for signing transactions with Stellar. It can be embedded on any website and it supports multiple wallets. We believe that Simple Signer provides an easy and secure way to implement logging and signing functionality on your website.
+Simple Signer is a simple tool for signing transactions with Stellar. It can be embedded on any website and it supports multiple wallets. We believe that Simple Signer provides an easy and secure way to implement login and signing functionality on your website.
 
-Simple Signer provides two endpoints, /connect and /sign. When you open /connect, Simple Signer will prompt you to log in with a Wallet or using your Private Key. Once you are logged in, Simple Signer will send a message to the parent window (the website implementing Simple Signer) with the Public Key of the logged in account and the wallet used.
+Simple Signer provides two endpoints, /connect and /sign. When the user opens /connect, Simple Signer will prompt the user to log in with a Wallet or using their Private Key. Once the user is logged in, Simple Signer will send a message to the parent window (the website implementing Simple Signer) with the Public Key of the logged in account and the wallet used.
 
 Using that Public Key, you will be able to create the desired transaction and send the XDR of the transaction to Simple Signer, either via URL `/sign?xdr=Here-Goes-The-Unsigned-XDR` or via postMessage, where the user will see all details of the transaction and decide if they want to sign it. Once the transaction is signed, Simple Signer will send the signed transaction in XDR format to the parent window, where you will be able to submit it to the network.
 
